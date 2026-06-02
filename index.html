@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sound Board</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-top: 50px;
+        }
+
+        button {
+            width: 120px;
+            height: 60px;
+            margin: 10px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Sound Board</h1>
+
+    <button onclick="playSound('sound1.mp3')">Sound 1</button>
+    <button onclick="playSound('sound2.mp3')">Sound 2</button>
+    <button onclick="playSound('sound3.mp3')">Sound 3</button>
+    <button onclick="playSound('sound4.mp3')">Sound 4</button>
+    <button onclick="playSound('sound5.mp3')">Sound 5</button>
+
+    <script>
+        function playSound(file) {
+            let sound = new Audio(file);
+            sound.play();
+        }
+    </script>
+
+</body>
+</html>
